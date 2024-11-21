@@ -1,11 +1,17 @@
+import React from 'react';
+import Hero from '../components/Hero'; // Import the Hero component
+import ServiceCard from '../components/ServiceCard';
+import TestimonialCard from '../components/TestimonialCard';
+
 const Home = () => {
-    return (
-      <div className="p-8">
-        <h1 className="text-4xl font-bold text-center">Welcome to Inspire With Kelvin</h1>
-        <p className="text-center mt-4">Your digital marketing journey starts here!</p>
-      </div>
-    );
-  };
-  
-  export default Home;
-  
+  return (
+    <>
+      {/* Hero Section */}
+      <Hero />
+      <TestimonialCard/>
+      <ServiceCard/>
+    </>
+  );
+};
+
+export default Home;

@@ -7,3 +7,19 @@
 body {
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
+/* Add to index.css */
+@keyframes scrollStars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 1000px;
+  }
+}
+
+.starry-bg {
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-size: 800px 800px;
+  animation: scrollStars 60s linear infinite;
+  opacity: 0.2;
+}
